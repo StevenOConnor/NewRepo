@@ -1,0 +1,54 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package gcd1;
+
+import java.util.Scanner;
+/**
+ *
+ * @author owner
+ */
+public class GCD1 
+{
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) 
+    {
+        // TODO code application logic here
+    
+        Scanner user_input = new Scanner(System.in);
+        
+        
+        System.out.print("Enter the first value : ");
+        int a = user_input.nextInt();
+        System.out.println(a);
+        
+        System.out.print("Enter the second value : ");
+        int b = user_input.nextInt();
+        System.out.println(b);
+        
+
+        
+     //   while(a!=b)         // while int 1 is not the same as int 2
+     //   {                   // do the following  >
+                            // System.out.println("The greatest common divisor of "+ a " and "+b" is ");
+            
+            
+        if (a>b)
+        {             //  990/210 =  4 r 150
+           float temp = a/b;  // is 4.756465
+           int temp2; 
+           temp2 =(int)temp; // 4 
+           int GCD = a - (b*temp2);
+               
+
+    System.out.println("The Greatest common divisor for " +a+ " and " +b+ " is "+GCD);   //print out the values for each int
+
+        }
+
+    }
+}
